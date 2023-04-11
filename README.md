@@ -1,2 +1,2 @@
-# autonomous_driving_service_release
-KETI autonomous driving service release repository
+# V2X
+5g-nr-v2x
