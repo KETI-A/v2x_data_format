@@ -1,4 +1,4 @@
 # V2X Data Format Repository
-- 5g-nr-v2x
+- Project : 5g-nr-v2x
 - Released Version
- + 1.0 : the first release
+  + 23.04.11 : the first release (Version 1.0)
