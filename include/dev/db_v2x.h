@@ -57,8 +57,14 @@
 #include <stdint.h>
 
 /***************************** Definition ************************************/
-#define DB_V2X_VERSION_MAJOR                    = 1
-#define DB_V2X_VERSION_MINOR                    = 5
+
+/**
+* @details DB Version
+* @note express as DB_V2X_VERSION_MAJOR.DB_V2X_VERSION_MINOR (x.y)
+*/
+
+#define DB_V2X_VERSION_MAJOR                    (1)
+#define DB_V2X_VERSION_MINOR                    (5)
 
 /***************************** Enum and Structure ****************************/
 typedef enum {
