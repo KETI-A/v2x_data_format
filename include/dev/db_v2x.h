@@ -81,6 +81,13 @@
 #define CLI_DB_V2X_MAJOR_SHIFT                  (4)
 #define CLI_DB_V2X_MINOR_MASK                   (0x0F)
 
+
+/**
+* @details DB V2X PSID
+* @param DB_V2X_PSID           5G-NR-V2X Application PSID
+*/
+#define DB_V2X_PSID                             (5271)
+
 /***************************** Enum and Structure ****************************/
 /**
 * @details DB V2X Device Type
@@ -246,7 +253,7 @@ typedef enum {
 * @param ulPayloadLength    payload length
 * @param ulPacketCrc32      header + payload crc32
 */
-typedef struct DB_V2X {
+typedef struct DB_V2X_t {
     DB_V2X_DEVICE_TYPE_E                        eDeviceType;
     DB_V2X_TELECOMMUNICATION_TYPE_E             eTeleCommType;
     uint32_t                                    unDeviceId;
@@ -261,7 +268,7 @@ typedef struct DB_V2X {
     uint16_t                                    usSwVer;
     uint32_t                                    ulPayloadLength;
     uint32_t                                    ulPacketCrc32;
-} DB_V2X_T;
+} __attribute__((__packed__)) DB_V2X_T;
 
 /***************************** Function Protype ******************************/
 
